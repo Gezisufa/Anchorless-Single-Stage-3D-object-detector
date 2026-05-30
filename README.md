@@ -10,7 +10,7 @@
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Installation
 ```bash
@@ -39,7 +39,7 @@ python infer.py
 
 ---
 
-## 📊 Pipeline Overview
+## Pipeline Overview
 ┌─ SolidWorks .sldasm ─────────────────────────┐
 │                                               │
 ├─→ sw_preprocess.py (Windows only)            │
@@ -64,7 +64,7 @@ python infer.py
 
 ---
 
-## 🏗️ Model Architecture
+## Model Architecture
 
 ### VoxelOneStage3D — Anchorless 3D Detector
 
@@ -93,7 +93,7 @@ L_class       : CrossEntropy (positive cells only)
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 voxel-nn/
 ├── single-stage/                  ← Main detector pipeline
 │   ├── production/
@@ -119,7 +119,7 @@ voxel-nn/
 
 ---
 
-## ⚙️ Installation & Setup
+## Installation & Setup
 
 ### Requirements
 - **Python**: 3.8+
@@ -136,9 +136,9 @@ pip install -r requirements.txt
 
 ---
 
-## 📚 Detailed Usage
+## Detailed Usage
 
-### 1️⃣ Data Preparation (Training)
+### 1️. Data Preparation (Training)
 
 **Training dataset format** — one directory per sample:
 data/dataset/
@@ -160,7 +160,7 @@ python convert_data.py
 
 ---
 
-### 2️⃣ Training
+### 2️. Training
 
 ```bash
 cd single-stage
@@ -184,7 +184,7 @@ python train.py
 
 ---
 
-### 3️⃣ Inference
+### 3️. Inference
 
 ```bash
 cd single-stage
@@ -211,7 +211,7 @@ out/
 
 ---
 
-### 4️⃣ SolidWorks Preprocessing (Windows Only)
+### 4️. SolidWorks Preprocessing (Windows Only)
 
 ```bash
 cd single-stage
@@ -219,26 +219,26 @@ python sw_preprocess.py
 ```
 
 **Pipeline:**
-1. ✅ Open assembly (`.sldasm`)
-2. ✅ Apply Display State (e.g., `"HV only"`)
-3. ✅ Suppress components in `SUPPRESS_LIBRARY`
-4. ✅ Export as STL + log specs to Excel
-5. ✅ (Optional) Auto-run inference (`AUTO_RUN_INFER = True`)
+1. Open assembly (`.sldasm`)
+2. Apply Display State (e.g., `"HV only"`)
+3. Suppress components in `SUPPRESS_LIBRARY`
+4. Export as STL + log specs to Excel
+5. (Optional) Auto-run inference (`AUTO_RUN_INFER = True`)
 
 ---
 
-### 5️⃣ Validation
+### 5️. Validation
 
 ```bash
 cd single-stage
 python validate.py
 ```
 
-**Output:** `val_vis/` — GT boxes (🟩 green) vs. predictions (🟥 red)
+**Output:** `val_vis/` — GT boxes (green) vs. predictions (red)
 
 ---
 
-## 📋 Excel Report Format
+## . Excel Report Format
 
 **detections_report.xlsx** contains two row types:
 
@@ -261,7 +261,7 @@ CLASS_LIBRARY = {
 
 ---
 
-## 🎨 Input Formats
+## Input Formats
 
 ### STL Files
 ```python
@@ -284,7 +284,7 @@ PNG_DIR = "data/svx/"
 
 ---
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 | Issue | Solution |
 |-------|----------|
@@ -296,7 +296,7 @@ PNG_DIR = "data/svx/"
 
 ---
 
-## 📖 References
+## References
 
 - 3D ShapeNets (Wu et al., 2015)
 - VoxNet (Maturana & Scherer, 2015)
@@ -306,7 +306,7 @@ PNG_DIR = "data/svx/"
 
 ---
 
-## 📝 Publication
+## Publication
 
 **White Paper:** "Dense 3D Detection from CAD-Derived Volumetric Data"
 - **Authors:** Ing. Serhii Andriievskyi, Ing. Matouš Cejnek, Ph.D.
@@ -315,19 +315,18 @@ PNG_DIR = "data/svx/"
 
 ---
 
-## 👤 Author & Contact
+## Author & Contact
 
 **Serhii Andriievskyi**
-- 🎓 Ph.D. Candidate, AI for Engineering Systems (CTU Prague)
-- 💼 Process Engineer, Sécheron Hasler CZ
-- 📧 andriser@cvut.cz
+- Ph.D. Candidate, AI for Engineering Systems (CTU Prague)
+- andriser@cvut.cz
 
 **Supervisor:**  
 Ing. Matouš Cejnek, Ph.D. — Czech Technical University in Prague
 
 ---
 
-## 📄 License
+## License
 
 MIT License
 
