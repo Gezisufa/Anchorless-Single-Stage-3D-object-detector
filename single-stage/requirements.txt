@@ -1,0 +1,16 @@
+numpy
+matplotlib
+numpy-stl
+meshlib
+scipy
+trimesh
+rtree
+subprocess.run
+torch
+torchvision
+torchmetrics
+scikit-learn
+torchmetrics
+pycocotools
+pandas
+openpyxl

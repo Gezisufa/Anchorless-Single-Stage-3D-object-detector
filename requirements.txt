@@ -1,3 +1,28 @@
+# Core ML
 numpy
-matplotlib
+torch
+torchvision
+
+# 3D geometry / voxelization
 numpy-stl
+stl-to-voxel
+trimesh
+rtree
+meshlib
+scipy
+
+# Computer vision
+opencv-python
+
+# Data & reporting
+pandas
+openpyxl
+matplotlib
+
+# Evaluation (optional)
+torchmetrics
+scikit-learn
+pycocotools
+
+# Windows/SolidWorks COM automation (Windows only, requires SolidWorks installed)
+pywin32

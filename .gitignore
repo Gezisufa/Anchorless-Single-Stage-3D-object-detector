@@ -1,4 +1,4 @@
-data/
+scratch/
 .idea/
 
 # Byte-compiled / optimized / DLL files
@@ -175,3 +175,13 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Generated files
+single-stage/out/
+single-stage/in/
+single-stage/.claude/
+single-stage/dataset/
+*.xlsx
+*.ipynb
+*.SLDASM
+*.SLDPRT

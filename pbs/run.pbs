@@ -1,0 +1,13 @@
+#PBS -N train.py
+#PBS -l select=1:ncpus=4:mpiprocs=1:ngpus=1
+#PBS -m ae
+#PBS -M andriser@cvut.cz
+
+
+cd $PBS_O_WORKDIR
+cd ../voxel-nn
+
+source .venv/bin/activate
+cd model_2d_ssd
+python train.py
+deactivate
